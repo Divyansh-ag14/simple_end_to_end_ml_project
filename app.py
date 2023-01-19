@@ -10,4 +10,9 @@ def hello():
     return "Hello World!!"
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    try:
+        app.run(debug=True)
+    except Exception as e:
+        print("Error Occured!", e)
+    else:
+        print("success!")
