@@ -31,7 +31,7 @@ def predict():
     output = model.predict(scaled_input)[0]
     print("output", output)
 
-    return render_template("home.html", predicted_text=f"Predicted Price: {np.round(output,3)}")
+    return render_template("home.html", predicted_text=f"Predicted Price: {np.round(output)}")
 
 if __name__ == "__main__":
     try:
